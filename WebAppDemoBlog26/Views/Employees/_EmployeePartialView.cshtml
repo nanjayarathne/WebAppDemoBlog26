@@ -1,0 +1,15 @@
+﻿@model IEnumerable<WebAppDemoBlog26.Models.Employee>
+<table>
+    <tr>
+        <th>@Html.DisplayNameFor(model => model.First().Name)</th>
+        <th>@Html.DisplayNameFor(model => model.First().Gender)</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.Name)</td>
+            <td>@Html.DisplayFor(modelItem => item.Gender)</td>
+        </tr>
+    }
+</table>

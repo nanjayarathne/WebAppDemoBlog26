@@ -1,0 +1,11 @@
+﻿
+@{
+    Layout = null;
+}
+
+@using (Html.BeginForm("Index1","Employees",FormMethod.Post))
+{
+    @Html.TextArea("comments");
+
+    <input type="submit" name="btnsubmit" />
+}

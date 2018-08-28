@@ -1,0 +1,11 @@
+﻿@model WebAppDemoBlog26.Models.Employee
+
+<tr>
+    <td>
+        <input type="checkbox" name="employeeIdsToDelete" id="employeeIdsToDelete" value="@Model.EmployeeId" />
+    </td>
+    <td>@Model.Name</td>
+    <td>@Model.Gender</td>
+    <td>@Model.City</td>
+    <td>@Model.Department.Name</td>
+</tr>
